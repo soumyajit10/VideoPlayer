@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MediaPlayerActivity">
+    <com.halilibo.bvpkotlin.BetterVideoPlayer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/player"
+        app:bvp_autoPlay="false"
+        app:bvp_disableControls="false"
+        app:bvp_hideControlsOnPlay="true"
+        app:bvp_pauseDrawable="@drawable/bvp_action_pause"
+        app:bvp_playDrawable="@drawable/bvp_action_play"
+        app:bvp_restartDrawable="@drawable/bvp_action_restart"
+        app:bvp_source="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
+        app:bvp_captionSize="22sp"
+        app:bvp_captionColor="@color/white"
+        app:bvp_gestureType="SwipeGesture"
+        app:bvp_loop="false" />
+
+</LinearLayout>
